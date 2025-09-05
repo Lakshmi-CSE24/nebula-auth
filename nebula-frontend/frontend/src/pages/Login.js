@@ -6,7 +6,7 @@ export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [dialog, setDialog] = useState({ show: false, title: "", message: "" });
-  const API = "http://localhost:5000/api";
+  const API = "https://nebula-auth-api.onrender.com/api";
   const playClick = useClickSound();
 
   const handleLogin = async (e) => {

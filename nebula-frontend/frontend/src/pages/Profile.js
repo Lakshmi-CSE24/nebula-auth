@@ -19,7 +19,7 @@ export default function Profile() {
     }
 
     axios
-      .get("http://localhost:5000/api/auth/profile", {
+      .get("https://nebula-auth-api.onrender.com/api/auth/profile", {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => setUser(res.data))
